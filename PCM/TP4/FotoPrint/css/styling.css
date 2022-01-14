@@ -1,0 +1,53 @@
+#buttons{
+    position: relative;
+    float: left;
+    //text-align: center;
+    margin-right: 1%;
+}
+
+#canvas2 {
+    position:relative;
+    cursor:crosshair;
+    margin-left: 2%
+}
+
+#canvas{
+    position:relative;
+    cursor:crosshair;
+}
+
+#buttonsBottom{
+
+}
+h1{
+    margin-left: 20%;
+}
+
+#images{
+  margin: 2%;
+}
+#textButton{
+    margin: 2%;
+    width: 100%;
+}
+#bgColor{
+    margin: 2%;
+    width: 50%;
+}
+#color1{
+    margin: 2%;
+    width: 50%;
+}
+#remover{
+    margin: 2%;
+    width: 100%;
+     margin:0;
+     border: none;
+     padding: 0;
+ }*/
+
+/*
+section {
+    position: relative;
+    left: 100px;
+}*/

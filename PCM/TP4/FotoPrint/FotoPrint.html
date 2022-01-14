@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Photos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styling.css" type="text/css"/>
+    <script src="js/FotoPrint_manager.js"></script>
+    <script src="js/FotoPrint.js"></script>
+    <script src="js/DrawingObjects.js"></script>
+
+</head>
+<body background = "imgs/bg.jpg">
+<h1>Escolha um dos items:</h1>
+<section id="buttons">
+    <button onclick= "setText()" id="textButton">Submeter texto </button>
+    <br>
+    <input id="images" type="file" accept="image/*" onchange = "setPictures()">
+    <br>
+    <input type="color" name="colorpalette" id="color1" oninput="ChangeColor()"> Cor Objecto </input>
+    <br>
+    <input type = "color" id = "bgColor" onchange="changeBGcolor()" > Cor background </input>
+    <br>
+    <button onclick="remove();" id="remover"> Delete </button>
+</section>
+
+
+<section>
+    <canvas id="canvas2" width="760" height="170">
+        Your browser doesn't recognize the canvas element
+    </canvas>
+</section>
+
+<section>
+    <canvas id="canvas" width="1055" height="400">
+        Your browser doesn't recognize the canvas element
+    </canvas>
+</section>
+<section id="buttonsBottom">
+    <button onclick="saveasimage();"> Save Image </button>
+</section>
+
+<section>
+    <script> window.onload = main(); </script>
+</section>
+
+<footer></footer>
+</body>
+</html>
