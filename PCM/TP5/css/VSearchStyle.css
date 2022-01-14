@@ -1,0 +1,233 @@
+
+#buttonSearch{
+  border:none;
+  float:right;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background:dodgerblue;
+}
+
+#logo{
+  position: relative;
+  margin-left: 10%;
+}
+
+#canvas {
+    position: absolute;
+    left: 7%;
+    right: 7%;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+#textBox img{
+  float:left;
+  width: 34px;
+  height: 32px;
+}
+
+#textBar {
+  position: absolute;
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:491px;
+}
+
+#colorRed{
+    background-color: red;
+    padding: 15px 15px;
+    border-radius: 9px;
+    margin-left: 35%;
+}
+
+#colorRed:hover{
+    background-color: darkred;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorOrange{
+    background-color: orange;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorOrange:hover{
+    background-color: orangered;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorYellow{
+    background-color: yellow;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorYellow:hover{
+    background-color: darkgoldenrod;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorGreen{
+    background-color: green;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorGreen:hover{
+    background-color: darkolivegreen;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorBlue-green{
+    background-color: lightseagreen;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorBlue-green:hover{
+    background-color: cadetblue;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorBlue{
+    background-color: blue;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorBlue:hover{
+    background-color: darkblue;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorPurple{
+    background-color: purple;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorPurple:hover{
+    background-color: indigo;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorPink{
+    background-color: pink;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorPink:hover{
+    background-color: violet;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorWhite{
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorWhite:hover{
+    background-color: darkgray;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorGrey{
+    background-color: grey;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorGrey:hover{
+    background-color: dimgray;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorBlack{
+    background-color: black;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorBlack:hover{
+    background-color: black;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#colorBrown{
+    background-color: chocolate;
+    padding: 15px 15px;
+    border-radius: 9px;
+}
+
+#colorBrown:hover{
+    background-color: saddlebrown;
+    padding: 15px 15px;
+    border-radius: 9px;
+    border: 2px solid dodgerblue ;
+    transition: 0.7s;
+}
+
+#searchButton{
+    padding: 10px 10px;
+    position: relative;
+    margin-bottom: 2px;
+}
+#textBox{
+    position: absolute;
+    left: 480px;
+    top: 50px;
+    background-color:white;
+    border:solid 2px black;
+    border-radius:10px;
+    width:600px;
+    height:32px;
+}
+
+.ColorBar{
+    border: 2px solid transparent;
+    text-align: left;
+    left:4%;
+    position: relative;
+    margin-top: -3%;
+}

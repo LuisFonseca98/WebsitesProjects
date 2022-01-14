@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PCM Final Project - Visual Search">
+    <meta name="keywords" content="HTML5, CSS, JavaScript">
+    <meta name="author" content="Rui Jesus">
+    <meta charset="UTF-8">
+    <title>Visual Search</title>
+    <link rel="stylesheet" href="css/VSearchStyle.css">
+    <script src="js/Image_Processing.js"></script>
+    <script src="js/XML_Database.js"></script>
+    <script src="js/ISearchEngine.js"></script>
+    <script src="js/ISearchEngine_Manager.js"></script>
+</head>
+
+<body background= "Images/bg.jpg"/>
+<div id = "logo">
+  <img src = "Images/logo.png" alt="" width="10%" height="8%">
+</div>
+
+<section id="query">
+<datalist id = "wordsAvailable">
+        <option value="beach"></option>
+        <option value="birthday"></option>
+        <option value="face"></option>
+        <option value="indoor"></option>
+        <option value="manmade/artificial"></option>
+        <option value="manmade/manmade"></option>
+        <option value="manmade/urban"></option>
+        <option value="marriage"></option>
+        <option value="nature"></option>
+        <option value="no_people"></option>
+        <option value="outdoor"></option>
+        <option value="party"></option>
+        <option value="people"></option>
+        <option value="snow"></option>
+</datalist>
+
+<div id = "textBox">
+  <img src = "Images/lupa.png" alt = "Search...">
+  <input type = "text" list = "wordsAvailable" onchange="searchByKeywords()" id="textBar" placeholder="Search..."/>
+  <button id = "buttonSearch">Search</button>
+</div>
+</section>
+<section id="Colors">
+<div class = "ColorBar" >
+    <button id="colorRed" onclick="searchColor('colorRed')" value="red"></button>
+    <button id="colorOrange" onclick="searchColor('colorOrange')" value="orange"></button>
+    <button id="colorYellow" onclick="searchColor('colorYellow')"  value="yellow"></button>
+    <button id="colorGreen" onclick="searchColor('colorGreen')" value="green"></button>
+    <button id="colorBlue-green" onclick="searchColor('colorBlue-green')" value="Blue-green"></button>
+    <button id="colorBlue" onclick="searchColor('colorBlue')" value="blue"></button>
+    <button id="colorPurple" onclick="searchColor('colorPurple')"  value="purple"></button>
+    <button id="colorPink" onclick="searchColor('colorPink')" value="pink"></button>
+    <button id="colorWhite" onclick="searchColor('colorWhite')" value="white"></button>
+    <button id="colorGrey" onclick="searchColor('colorGrey')" value="grey"></button>
+    <button id="colorBlack" onclick="searchColor('colorBlack')" value="black" ></button>
+    <button id="colorBrown" onclick="searchColor('colorBrown')" value="brown"></button>
+</div>
+</section>
+<hr>
+<section id="visualizacao">
+    <canvas id="canvas" width="1200" height="750">
+        Your browser doesn't recognize the canvas element
+    </canvas>
+</section>
+
+<footer>
+    <!--<p>Rui Jesus</p>-->
+</footer>
+
+
+<script> window.onload = main(); </script>
+</body>
+</html>
