@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/styling.css" type="text/css"/>
+<head>
+  <meta charset="UTF-8">
+  <script src="js/blackjack_object.js"></script>
+  <script src="js/blackjack_manager.js"></script>
+  <title>BlackJack</title>
+</head>
+
+<body background = "img/blackJackField.png" class = "bg">
+<header>
+	<div id = "title">
+        <img src = "img/Title.png"/>
+  <!--<h1>BLACKJACK</h1>-->
+	</div>
+</header>
+
+<section id="game">
+	<div id = "dealerHeader">
+		<h1 id="dealerH1">Dealer</h1>
+	</div>
+  <p id="dealer"></p>
+  <div id = "cardsDealer" width=100%></div>
+  <div id="playerHeader">
+		<h1 id="playerH1">Player</h1>
+  </div>
+  <p id="player"></p>
+  <div id = "cardsPlayer" width=100%></div>
+  <div id="photo">
+  </div>
+  <button id="card" type="button" onclick="player_new_card()" class ="button button">Card</button>
+  <button id="stand" type="button" onclick="dealer_finish()" class ="button2 button2">Stand</button>
+  <button id="new_game" type="button" onclick="new_game()" class ="button3 button3 disabled">New Game</button>
+</section>
+
+<!--<section id="sec_debug">-->
+  <!--<h1>Debug</h1>-->
+  <!--<p id="debug"></p>-->
+<!--</section>-->
+
+<section>
+  <script> window.onload = new_game();</script>
+</section>
+<footer></footer>
+</body>
+
+</html> 
