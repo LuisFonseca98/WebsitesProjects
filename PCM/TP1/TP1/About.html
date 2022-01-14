@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styling.css">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+
+<body>
+<header>
+    <a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="steelblue"/>
+        </svg>
+    </a>
+    <div id="drawer">
+        <article>
+            <a href="Home.html">Home </a>
+            <a href="Categories.html"> Categories</a>
+            <a href="About.html"> About</a>
+            <a href="Contact.html"> Contact</a>
+        </article>
+    </div>
+    <script>
+        let menu_icon = document.querySelector('#menu_icon');
+        let container = document.querySelector("#container");
+        let drawer = document.querySelector('#drawer');
+
+        menu_icon.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        container.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+    </script>
+    <div id="menu">
+        <nav>
+            <h2 id="titulo"><i>Car Addicted</i></h2>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Categories.html">Category</a>
+                    <ul>
+                        <li><a href="Categories.html#carContent">Super Cars</a></li>
+                        <li><a href="Categories.html#carContent2">Suvs</a></li>
+                        <li><a href="Categories.html#carContent3">Luxury Sedans</a></li>
+                    </ul>
+                </li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id ="About">
+    <p><b><i>About</i></b></p>
+</div>
+
+<border>
+    <h3></h3>
+</border>
+
+<div id="AboutText">
+    <p>
+        Car Addict is the latest site created for your dream car.
+        Creatde by two *specialized* programmers, and fans of the program top Gear, the website
+        has the objective to share more details about the car you always dream.
+        So take a look around, you may find the information about the car you want.
+        In case you are interested to know more about us, visit our contact page.
+    </p>
+</div>
+
+<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+<img src="imgs/AboutPage3%20.png" >
+
+<footer>
+    <p><i>Trabalho Feito pelo grupo Nº13</i></p>
+</footer>
+</body>
+</html>
+
+

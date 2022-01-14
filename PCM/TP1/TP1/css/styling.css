@@ -1,0 +1,880 @@
+a {
+    text-decoration: none;
+}
+div#About{
+    margin-top: 6%;
+}
+div#About p {
+    font-size: 2.5rem;
+
+}
+div#AboutText p{
+    font-size: 1.5rem;
+    font-family: "Times New Roman";
+    margin-right: 3%;
+    margin-left: 3%;
+}
+p{
+    font-family: "Times New Roman";
+}
+
+header{
+    border: 3px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0;
+}
+body{
+    margin: 4px;
+    background-color:#edeef0;
+    border-top: 2px solid black;
+}
+
+h2#titulo{
+    color: darkred;
+}
+
+section#carContent figcaption{
+    color: darkred;
+}
+
+section#carContent2 figcaption{
+    color: darkred;
+}
+
+section#carContent3 figcaption{
+    color: darkred;
+}
+div#superCar p{
+    color:steelblue;
+}
+
+div#LuxurySedans p{
+    color:steelblue;
+}
+
+div#offRoaders p{
+    color:steelblue;
+}
+
+h3{
+    font-family: "Times New Roman";
+}
+
+border h4{
+    border-style: solid;
+    color:black;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+div p{
+    font-family: "Times New Roman",Serif;
+    font-size: 1.5rem;
+
+}
+div#About{
+    font-family: "Times New Roman",Serif;
+    font-size: 2.5rem;
+    margin-left: 2%;
+}
+
+
+#ContactosDiv {
+    display: grid;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+h3#Contactos{
+    font-size: 2.5rem;
+}
+
+
+nav {
+    text-align: center;
+    display: inherit;
+    flex-wrap: wrap;
+    font-size: 98%;
+}
+
+#contacto1 {
+    width: 100%;
+    height: fit-content;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#contacto2 {
+    width: 100%;
+    height: fit-content;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#img1 {
+    float: left;
+    margin-top: 0px;
+}
+
+
+#descri1 {
+    padding-bottom: 1%;
+    font-size: 1.4rem;
+    font-family: "Times New Roman";
+}
+
+#img2 {
+    margin-top: 0px;
+    float: left;
+}
+
+#descri2 {
+    padding-bottom: 1%;
+    font-size: 1.4rem;
+    font-family: "Times New Roman";
+}
+
+#carContent{
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#carContent2{
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#carContent3{
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 390px) and (max-device-width: 679px) {
+
+    h2#titulo{
+        position:relative;
+        margin-bottom: 0px;
+
+    }
+
+    nav {
+        display: inherit;
+        flex-wrap: wrap;
+        font-size: 120%;
+
+    }
+    nav ul {
+        margin-left: 5%;
+        position: relative;
+        display: inline-block;
+        margin-right: 1%;
+    }
+
+
+
+
+
+}
+@media only screen and (min-width: 390px) and (max-device-width: 679px) and (orientation: landscape ){
+
+    p{
+        margin-top: 1%;
+    }
+    #img1{
+        float: none;
+    }
+
+    #img2{
+        float: none;
+    }
+
+    #contact1{
+        font-size: 1.3rem;
+
+    }
+    #contact2{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (min-width: 680px) and (max-device-width: 1023px) {
+
+    h2#titulo{
+        position:absolute;
+        margin-bottom: 0px;
+        margin-top: 2%;
+        margin-left: 2%;
+        font-size: 180%;
+    }
+
+
+    nav {
+
+        text-align: right;
+        display: inherit;
+        flex-wrap: wrap;
+        font-size: 165%;
+
+    }
+
+    nav ul li {
+
+        text-align: right;
+        display:block;
+        float:left;
+        padding:3px 7px;
+
+    }
+    nav ul {
+        font-size: 80%;
+        position: relative;
+        display: inline-block;
+
+    }
+
+
+    #img1 {
+        margin-right: 0.5%;
+    }
+    #img2 {
+        margin-right: 0.5%;
+    }
+
+    #contact1{
+        font-size: 1.5rem;
+    }
+    #contact2{
+        font-size: 1.5rem;
+    }
+
+    #fig1{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig2{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig3{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig4{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig5{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig6{
+        margin-right: 4%;
+        margin-left: 5%;
+    }
+
+    #fig7{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig8{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig9{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig10{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig11{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+
+    #fig12{
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+    #carContent{
+        margin-right: 4%;
+        margin-left: 4%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #carContent2{
+        margin-right: 4%;
+        margin-left: 4%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #carContent3{
+        margin-right: 4%;
+        margin-left: 4%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 680px) and (max-device-width: 1023px) and (orientation: landscape ){
+
+    #contacto1 {
+        height: auto;
+    }
+
+    #contacto2 {
+        height: auto;
+    }
+
+    p{
+        margin-top: 1%;
+    }
+
+    #descri1{
+        font-size: 1.7rem;
+
+    }
+    #descri2{
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    ul {
+        padding: 0px;
+    }
+
+    h2#titulo{
+        position:absolute;
+        margin-bottom: 0px;
+        margin-top: 0.5%;
+        margin-left: 2%;
+        font-size: 230%;
+        font-family: "Times New Roman";
+    }
+
+    nav {
+        text-align: right;
+        display: inherit;
+        flex-wrap: wrap;
+        font-size: 180%;
+
+    }
+
+    #contacto1 {
+        position: relative;
+        float: inherit;
+        height: 310px;
+    }
+
+    #contacto2 {
+        height: 310px;
+    }
+
+    #img1 {
+        position: relative;
+        float: left;
+    }
+
+    #descri1 {
+        padding-bottom: 1%;
+        font-size: 150%;
+        font-family: "Times New Roman";
+    }
+
+    #img2 {
+        position: relative;
+        float: left;
+    }
+
+    #descri2 {
+        font-size: 150%;
+        font-family: "Times New Roman";
+    }
+
+    div#spacer1 {
+        font-size: 200%;
+    }
+
+
+}
+@media only screen and (min-width: 1024px) and (orientation: landscape ){
+    p#contacto1{
+        font-size: 1.9rem;
+        padding-top: 2%;
+    }
+
+    p#contacto2{
+        font-size: 1.9rem;
+        padding-top: 2%;
+    }
+
+    #img1 {
+        margin-right: 2%;
+    }
+    #img2 {
+        margin-right: 2%;
+    }
+    #descri1 {
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #carContent{
+        margin-right: 1%;
+        margin-left: 1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #carContent2{
+        margin-right: 1%;
+        margin-left: 1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #carContent3{
+        margin-right: 1%;
+        margin-left: 1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+nav ul {
+    padding-left: 0;
+    position: relative;
+    display: inline-block;
+
+}
+
+nav ul ul{
+    display: none;
+
+}
+
+nav ul li {
+    display:block;
+    float:left;
+    padding:3px 7px;
+
+}
+
+nav ul li a {
+    font-family: 'Times New Roman', sans-serif;
+    text-transform: uppercase;
+    transition: all .25s ease;
+    color: steelblue;
+    z-index: 1;
+
+}
+
+nav ul li a:hover {
+    color: #E56038;
+    z-index: 1;
+
+}
+
+
+nav ul li:hover > ul {
+    display: block;
+    z-index: 1;
+
+}
+
+nav ul li:hover > ul { margin: 10%; padding: 0px;}
+nav ul li:hover > ul li { float: none; display: block;}
+nav ul li:hover > ul li a { color: steelblue; min-width: 500px;}
+nav ul li:hover > ul li a:hover { color: #E56038;}
+
+nav ul li {position: relative;}
+nav ul li ul {position: absolute; top: 15px;  left: 20px;text-align: left ;}
+
+footer{
+    margin-top: 2px;
+    marging-bottom: 2px;
+    marging-left: 2px;
+    marging-right: 2px;
+    background-color: white;
+    text-align: center;
+    font-size: 150%;
+    font-family: "Times New Roman";
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#spacer{
+    padding: 5%;
+    background-color: darkgray;
+}
+
+
+.box {
+    width: 100%;
+}
+
+#superCar{
+    font-family: "Times New Roman",serif;
+    font-size: 165%;
+    margin-left: 3%;
+    margin-bottom: 0%;
+}
+
+#LuxurySedans{
+    font-family: "Times New Roman",serif;
+    font-size: 165%;
+    margin-left: 3%;
+    margin-bottom: 0%;
+}
+#offRoaders{
+    font-family: "Times New Roman",serif;
+    font-size: 165%;
+    margin-left: 3%;
+    margin-bottom: 0%;
+}
+
+#fig1{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig2{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig3{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig4{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig5{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig6{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig7{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig8{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig9{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig10{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig11{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#fig12{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#boxContent{
+    display: flex;
+    flex: 50%;
+    flex-wrap: wrap;
+    padding:2%;
+    padding-left: 4%;
+
+}
+
+.figureFooter {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px)  {
+    #boxContent{
+        display:block;
+        font-size: 150%;
+    }
+    nav ul li a {
+        font-family: 'Times New Roman', sans-serif;
+        text-transform: uppercase;
+        transition: all .25s ease;
+        color: steelblue;
+        z-index: 1;
+        display: none;
+
+    }
+}
+
+.figCaptionFooter{
+    text-align: center;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.responsive2{
+    width: 90%;
+    max-width: 200px;
+    height: auto;
+}
+
+.responsive3 {
+
+    max-width: 100%;
+
+    position: relative;
+
+    margin: auto;
+}
+
+
+.caption{
+
+    text-align: center;
+
+    position: absolute;
+
+    bottom: 8px;
+
+    width: 100%;
+
+    color: #f2f2f2;
+
+    font-size: 15px;
+
+    padding: 8px 22px;
+
+}
+
+.dots{
+
+    width: 13px;
+
+    height: 13px;
+
+    background: gray;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+}
+
+
+
+#slide.fade{
+    animation-name:fade;
+    animation-duration: 2.5s;
+}
+
+
+@keyframes fade {
+
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+
+}
+
+
+.active, .dot:hover {
+
+    background-color: #333;
+
+}
+
+/***************************************************MENU HAMBURGUER**********************************************/
+svg {
+    width: 60px;
+
+}
+#menu_icon{
+    cursor: pointer;
+    padding: 0px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1000;
+}
+
+#drawer{
+    background-color: #CCCCCC;
+    height:100%;
+    width: 60%;
+    position: absolute;
+    transition: all 0.2s linear;
+    transform: translateX(-100%);
+    top: 0px;
+    border-radius: 10px;
+    opacity:0.95;
+    z-index: 1;
+}
+
+#drawer.open {
+    transform: translateX(0);
+
+}
+
+article {
+    display:block;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+}
+
+article a {
+    font-size: 2.4rem;
+    text-decoration: none;
+
+}
+
+article a:link, article a:visited {
+    display: block;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    color: darkred;
+
+
+}
+
+article a:hover {
+    color: white;
+    background-color: #000000;
+
+}
+
+@media only screen and (min-width: 500px) {
+    article {
+        display:block;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        display: none;
+
+    }
+
+    article a {
+        font-size: 2.4rem;
+        text-decoration: none;
+        display: none;
+
+    }
+
+    article a:link, article a:visited {
+        display: block;
+        border-bottom: 3px solid #fff;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 5px;
+        color: black;
+        display: none;
+
+    }
+
+    article a:hover {
+        color: white;
+        background-color: #000000;
+        display: none;
+
+    }
+    svg {
+        width: 60px;
+        display: none;
+
+    }
+    #menu_icon{
+        cursor: pointer;
+        padding: 0px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        z-index: 1000;
+        display: none;
+
+    }
+
+    nav #drawer{
+        background-color: #CCCCCC;
+        height:100%;
+        width: 60%;
+        position: absolute;
+        transition: all 0.2s linear;
+        transform: translateX(-100%);
+        top: 0px;
+        border-radius: 10px;
+        opacity:0.95;
+        display: none;
+        z-index: 1;
+
+    }
+
+    #drawer.open {
+        transform: translateX(0);
+        display: none;
+
+    }
+}
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Addicted</title>
+    <link rel="stylesheet" href="css/styling.css" type="text/css"/>
+</head>
+<body>
+<header>
+    <a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="steelblue"/>
+        </svg>
+    </a>
+    <div id="drawer">
+        <article>
+            <a href="Home.html">Home </a>
+            <a href="Categories.html"> Categories</a>
+            <a href="About.html"> About</a>
+            <a href="Contact.html"> Contact</a>
+        </article>
+    </div>
+    <script>
+        let menu_icon = document.querySelector('#menu_icon');
+        let container = document.querySelector("#container");
+        let drawer = document.querySelector('#drawer');
+
+        menu_icon.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        container.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+    </script>
+    <nav>
+        <h2 id="titulo"><i>Car Addicted</i></h2>
+            <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Categories.html">Category</a>
+                <ul>
+                    <li><a href="Categories.html#carContent">Super Cars</a></li>
+                    <li><a href="Categories.html#carContent2">Suvs</a></li>
+                    <li><a href="Categories.html#carContent3">Luxury Sedans</a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="ContactosDiv">
+    <h3 id="Contactos"><i>Contactos</i></h3>
+<section id="contacto1">
+    <figure id="img1"><img src="imgs/45125.jpg" class="responsive"/></figure>
+    <section id="descri1">
+        <p id="contact1">Nome:Luis Carlos Semedo da Fonseca<br>Email:A45125@isel.alunos.pt<br>Numero de telefone: 918409391<br>Faculdade: Instituto Superior de Engenharia de Lisboa(ISEL)</p>
+    </section>
+</section>
+<section>
+
+</section>
+<section id="contacto2">
+    <figure id="img2"><img src="imgs/45138.jpg" class="responsive"/></figure>
+    <div id="descri2">
+        <p id="contact2">Nome:Philipp Al-Badavi<br>Email:A45139@isel.alunos.pt<br>Numero de telefone:969696969<br>Faculdade: Instituto Superior de Engenharia de Lisboa(ISEL)</p>
+    </div>
+</section>
+</section>
+<div id="spacer">
+
+</div>
+
+<footer><i>Trabalho feito pelo grupo nª13</i></footer>
+</body>
+</html>

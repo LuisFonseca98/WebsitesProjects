@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Addicted</title>
+    <link rel="stylesheet" href="css/styling.css" type="text/css"/>
+    <script>
+        var counter = 0;
+        var images = [];
+        var time = 5000;
+
+
+
+        images[0] = "imgs/porshe-Panarema-Turbo-S.jpg";
+        images[1] = "imgs/LamborghiniAventador.jpg";
+        images[2] = "imgs/mercedesBenzE63S AMG.jpg";
+        images[3] = "imgs/AudiRS7.jpg";
+        images[4] = "imgs/The Crew2017-11-21-22-18-45.jpg";
+        images[5] = "imgs/The Crew2018-10-10-15-36-28.jpg";
+
+
+        function NextSlide(n) {
+            counter = n;
+            clearTimeout(thetimer);
+            slideIt ();
+        }
+        function slideIt ()
+        {
+
+            document.getElementById("slide").classList.toggle("fade");
+            var el = document.getElementById("slide");
+
+            el.src = images[counter];
+
+
+            if (counter != images.length - 1)
+                counter ++;
+            else
+                counter = 0;
+            thetimer = setTimeout("slideIt()", time);
+        }
+
+        window.onload = slideIt;
+    </script>
+
+</head>
+<body>
+<header>
+    <a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="steelblue"/>
+        </svg>
+    </a>
+    <div id="drawer">
+        <article>
+            <a href="Home.html">Home </a>
+            <a href="Categories.html"> Categories</a>
+            <a href="About.html"> About </a>
+            <a href="Contact.html"> Contact</a>
+        </article>
+    </div>
+    <script>
+        let menu_icon = document.querySelector('#menu_icon');
+        let container = document.querySelector("#container");
+        let drawer = document.querySelector('#drawer');
+
+        menu_icon.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        container.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+    </script>
+    <nav>
+        <h2 id="titulo"><i>Car Addicted</i></h2>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Categories.html">Category</a>
+                <ul>
+                    <li><a href="Categories.html#carContent">Super Cars</a></li>
+                    <li><a href="Categories.html#carContent2">Suvs</a></li>
+                    <li><a href="Categories.html#carContent3">Luxury Sedans</a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section id="slideshow" class="responsive3">
+        <div id="divSlideShow">
+            <img id="slide"/>
+            <div style="text-align:right">
+
+                <span class="dots" onclick="NextSlide(0)"></span>
+
+                <span class="dots" onclick="NextSlide(1)"></span>
+
+                <span class="dots" onclick="NextSlide(2)"></span>
+
+                <span class="dots" onclick="NextSlide(3)"></span>
+
+                <span class="dots" onclick="NextSlide(4)"></span>
+
+                <span class="dots" onclick="NextSlide(5)"></span>
+
+            </div>
+            <!--<p>...</p>-->
+            <!--<a href="">More info</a>-->
+        </div>
+    </section>
+    <div id="spacer">
+
+    </div>
+    <section id="boxContent">
+        <figure id="figura1" class = "figureFooter">
+            <img src="imgs/SuperCar%20.png" class="responsive2">
+            <figcaption class = "figCaptionFooter"><i><b>Super Cars</b></i></figcaption>
+        </figure>
+        <figure id="figura2" class = "figureFooter">
+            <img src="imgs/Suvs.png" class="responsive2">
+            <figcaption class = "figCaptionFooter"><i><b>Suvs</b></i></figcaption>
+        </figure>
+        <figure id="figura3" class = "figureFooter">
+            <img src="imgs/Luxury.png" class="responsive2">
+            <figcaption class = "figCaptionFooter"><i><b>Luxury Sedans</b></i></figcaption>
+        </figure>
+    </section>
+    <footer><i>Trabalho feito pelo grupo nª13</i></footer>
+</body>
+</html>

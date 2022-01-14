@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styling.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Categories</title>
+</head>
+<body>
+
+<header>
+    <a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="steelblue"/>
+        </svg>
+    </a>
+    <div id="drawer">
+        <article>
+            <a href="Home.html">Home </a>
+            <a href="Categories.html"> Categories</a>
+            <a href="About.html"> About</a>
+            <a href="Contact.html"> Contact</a>
+        </article>
+    </div>
+    <script>
+        let menu_icon = document.querySelector('#menu_icon');
+        let container = document.querySelector("#container");
+        let drawer = document.querySelector('#drawer');
+
+        menu_icon.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        container.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+    </script>
+    <div id="menu">
+        <nav>
+            <h2 id="titulo"><i>Car Addicted</i></h2>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Categories.html">Category</a>
+                    <ul>
+                        <li><a href="Categories.html#carContent">Super Cars</a></li>
+                        <li><a href="Categories.html#carContent2">Suvs</a></li>
+                        <li><a href="Categories.html#carContent3">Luxury Sedans</a></li>
+                    </ul>
+                </li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id ="superCar">
+    <p><i>Super Cars</i></p>
+</div>
+
+<section id="carContent">
+    <figure id="fig1">
+        <img src="imgs/ferrari488pista.jpg" class="responsive">
+        <figcaption>Ferrari 488 Pista</figcaption>
+        <p>
+            The Ferrari 488 is the <br> latest chapter <br> in Maranello's <br> ongoing history  <br> of open-top V8<br> Sports-Cars.
+        </p>
+    </figure>
+    <figure id="fig2">
+        <img src="imgs/paganiHuayraBC.jpg" class="responsive">
+        <figcaption>Pagani Huayra BC</figcaption>
+        <p>
+            Italian mid-engined <br> sports car produced by Pagani.<br>
+            Succeeding the company's<br> previous offering,<br>
+            the Zonda, it had a <br>base price of €850,000.
+        </p>
+    </figure>
+    <figure id="fig3">
+        <img src="imgs/LamborghiniAventador.jpg" class="responsive">
+        <figcaption>Lamborghini Aventador SV</figcaption>
+        <p>
+            The Lamborghini Aventador SV <br> is a mid-engined sports car. <br>
+            In keeping with <br> Lamborghini tradition,<br> the Aventador <br>is named after a fighting bull.
+        </p>
+    </figure>
+    <figure id="fig4">
+        <img src="imgs/LamborghiniHuracan.jpg" class="responsive">
+        <figcaption>Lamborghini Huracan Perfomante</figcaption>
+        <p>
+            The Huracán Performante has reworked  <br>the concept of super sports cars and taken <br>the notion of performance to levels <br>never seen before.
+        </p>
+    </figure>
+</section>
+
+<border>
+    <h4></h4>
+</border>
+
+<div id ="LuxurySedans">
+    <p><i>Suv</i></p>
+</div>
+
+<section id="carContent2">
+    <figure id="fig5">
+        <img src="imgs/BentleyBentayga.jpg" class="responsive">
+        <figcaption>Bentley Bentayga</figcaption>
+        <p>
+            Bentayga was created <br> for those who desire <br>
+            to seek new landscapes <br>and take a fresh look at <br> their world – <br>  to see through new eyes.
+        </p>
+    </figure>
+    <figure id="fig6">
+        <img src="imgs/BMW-X5M.jpg" class="responsive">
+        <figcaption>BMW X5M</figcaption>
+        <p>
+            Take the wheel of an <br> undeniable force. <br>The BMW X5 commands <br> respect
+            in every aspect, <br> from its powerful design to its <br>thunderous 4.4-liter V8 engine.
+        </p>
+    </figure>
+    <figure id="fig7">
+        <img src="imgs/Mercedes-Benz-ML63.jpg" class="responsive">
+        <figcaption>Mercedes Bens GL36AMG</figcaption>
+        <p>
+            Its powerful and distinctive design <br> and impressive dimensions <br> acknowledge only one style:  <br>its own.
+        </p>
+    </figure>
+    <figure id="fig8">
+        <img src="imgs/AudiSQ7.jpg" class="responsive">
+        <figcaption>Audi SQ7</figcaption>
+        <p>
+            High power, a discreet <br>understatement, <br> ample features and a <br> high degree <br> of everyday practicality
+        </p>
+    </figure>
+</section>
+
+<border>
+    <h4></h4>
+</border>
+
+<div id ="offRoaders">
+    <p><i>Luxury Sedans</i></p>
+</div>
+
+<section id="carContent3">
+    <figure id="fig9">
+        <img src="imgs/audiRS7.jpg" class="responsive">
+        <figcaption>Audi RS7</figcaption>
+        <p>
+            With a twin-turbo, <br>4.0-liter V8 TFSI engine <br> that cranks
+            out up to 605 hp <br>and 553 lb-ft of torque, <br>
+            the 2018 Audi RS 7 performance <br>just can’t wait to take off.
+        </p>
+    </figure>
+    <figure id="fig10">
+        <img src="imgs/bmwM5.jpg" class="responsive">
+        <figcaption>BMW M5</figcaption>
+        <p>
+            The BMW M5 is a high performance <br>variant of the
+            5 Series executive <br> car built by the <br> Motorsport division of BMW.
+        </p>
+    </figure>
+    <figure id="fig11">
+        <img src="imgs/porshe-Panarema-Turbo-S.jpg" class="responsive">
+        <figcaption>Porshe Panamera</figcaption>
+        <p>
+            The Porsche Panamera <br> is a luxury 4-door saloon.<br>
+            With all-wheel drive <br>versions also available, <br>
+            it is the only saloon manufactured by <br> Porsche as part of its  <br> strategy of expanding its market.
+        </p>
+    </figure>
+    <figure id="fig12">
+        <img src="imgs/mercedesBenzE63S%20AMG.jpg"class="responsive">
+        <figcaption>Mercedes Bens E63S AMG</figcaption>
+        <p>
+            The exterior of a <br> Mercedes-AMG is required <br> to combine striking design <br> with Driving Performance.<br>
+            The Mercedes-AMG E 63S AMG fulfills this <br>function particularly effectively.
+        </p>
+    </figure>
+</section>
+
+
+<footer>
+    <p><i>Trabalho Feito pelo grupo nº13</i></p>
+</footer>
+</body>
+</html>
