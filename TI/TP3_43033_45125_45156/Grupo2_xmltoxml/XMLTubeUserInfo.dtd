@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT XMLTubeUserInfo (user*)>
+<!ELEMENT user (name, publishedVideo*)>
+<!ATTLIST user username ID #REQUIRED>
+<!ATTLIST user birthdate CDATA #IMPLIED>
+<!ATTLIST user numberOfComments CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT publishedVideo (titulo, videoLink)>
+<!ATTLIST publishedVideo id ID #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT videoLink (#PCDATA)>

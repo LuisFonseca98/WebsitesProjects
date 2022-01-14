@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE XMLTubeUserInfo SYSTEM "XMLTubeUserInfo.dtd">
+<XMLTubeUserInfo>
+	<user username="JohnWick98" birthdate="08/01/1998" numberOfComments="6">
+		<name>Luis</name>
+		<publishedVideo id="v1">
+			<titulo>Top 10 places to go on the new year</titulo>
+			<videoLink>Error 404... link not found...</videoLink>
+		</publishedVideo>
+	</user>
+	<user username="CopyCat101" birthdate="01/08/2000" numberOfComments="4">
+		<name>Carlos</name>
+		<publishedVideo id="v2">
+			<titulo>Fallout76 is a good game, and wheres why</titulo>
+			<videoLink>Error 404... link not found...</videoLink>
+		</publishedVideo>
+	</user>
+</XMLTubeUserInfo>

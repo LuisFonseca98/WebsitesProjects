@@ -1,0 +1,113 @@
+
+	.responsive_img { 
+	max-width: 100%;
+	height: auto;
+	}
+	.h3_title { 
+	margin-right: 2%;
+	margin-left: 2%;
+	}
+	.reposition {
+	margin-right:4%;
+	margin-left:1%;
+	}
+	#reposition_2 {
+	margin-right:4%;
+	margin-left:1%;
+	}
+	#reposition_2 img {
+		max-width:45%;
+	}
+	.nome a{
+	text-decoration: none;
+	}
+
+	#centerPic{
+	padding-top:2%;
+	padding-right:5%;
+	padding-left:5%;
+	padding-bottom:2%;
+	}
+
+	.topnav a {
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 0.7vw 1vw;
+	text-decoration: none;
+	margin-top:-4%;
+	}
+
+	.topnav a:hover {
+	background-color: #ddd;
+	color: white;
+	}
+
+	.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+	}
+
+	.topnav-right {
+	float: right;
+	}
+	/*******
+	MENU
+	*******/
+
+	/*******
+	BODY_UTILIZADORES
+	*******/
+	div.utilizadores {
+	margin-right:1%;
+	margin-left:10%;
+	display:flex;
+	flex-wrap:wrap;
+	}
+	div.img img{
+	border: 2px solid #777;
+	margin-right:25px;
+	margin-left:15px;
+	}
+	div.nome {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	text-align: center;
+	}
+	div.nome a{
+	font-size:36px;
+	}
+	/*******
+	BODY_USERS
+	*******/
+	div#card {
+	display:flex;
+	flex-wrap:wrap;
+	padding-top:2%;
+	overflow:auto;
+	}
+	div.img_float img {
+	border: 2px solid #777;
+	margin-right:5%;
+	margin-left:3%;
+	max-width:90%;
+	float:left;
+	}
+	div.user {
+	margin-right:1%;
+	margin-left:1%;
+	display:flex;
+	flex-wrap:wrap;
+	}
+	div#info {
+	margin-right:1%;
+	margin-left:1%;
+	}
+	div#corpo_2 {
+	margin-left:2%;
+	margin-right:2%;
+	}
+	#footer{
+	font-size:2.5vw;
+	}
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by lol (lol) -->
+<!ELEMENT Tivid (utilizadores, videos, Playlists, Comentários, Registo)>
+<!--UTILIZADORES-->
+<!ELEMENT utilizadores (utilizador+)>
+<!ELEMENT utilizador (nome, email, datadenascimento?, numerodetelefone+, morada, foto?)>
+<!ATTLIST utilizador
+	id ID #REQUIRED
+	pass CDATA #REQUIRED
+	username CDATA #REQUIRED
+>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT datadenascimento EMPTY>
+<!ATTLIST datadenascimento
+	date CDATA #REQUIRED
+>
+<!ELEMENT numerodetelefone (#PCDATA)>
+<!ELEMENT morada (#PCDATA)>
+<!ELEMENT foto EMPTY>
+<!ATTLIST foto
+	pic CDATA #REQUIRED
+>
+<!--Videos-->
+<!ELEMENT videos (video+)>
+<!ELEMENT video (Descrição, linkImagem, duração, QualidadeVideo+, referenciaVideo, dataInserção, linkVideo, referenciaUtilizador)>
+<!ATTLIST video
+	id IDREFS #REQUIRED
+	Titulo ID #REQUIRED
+>
+<!ELEMENT Descrição EMPTY>
+<!ATTLIST Descrição
+  des CDATA #REQUIRED
+>
+<!ELEMENT linkImagem EMPTY>
+<!ATTLIST linkImagem
+  linkIm CDATA #REQUIRED
+  >
+<!ELEMENT duração (#PCDATA)>
+<!ELEMENT QualidadeVideo (q144p | q240p | q360p | q480p | q720p | q1080p)+>
+		<!ELEMENT q144p EMPTY>
+			<!ATTLIST q144p bool_ CDATA #REQUIRED>
+		<!ELEMENT q240p EMPTY>
+			<!ATTLIST q240p bool_ CDATA #REQUIRED>
+		<!ELEMENT q360p EMPTY>
+			<!ATTLIST q360p bool_ CDATA #REQUIRED>
+		<!ELEMENT q480p EMPTY>
+			<!ATTLIST q480p bool_ CDATA #REQUIRED>
+		<!ELEMENT q720p EMPTY>
+			<!ATTLIST q720p bool_ CDATA #REQUIRED>
+		<!ELEMENT q1080p EMPTY>
+			<!ATTLIST q1080p bool_ CDATA #REQUIRED>
+<!ELEMENT referenciaVideo EMPTY>
+<!ATTLIST referenciaVideo
+	Titulo IDREF #REQUIRED
+>
+<!ELEMENT dataInserção (#PCDATA)>
+<!ELEMENT linkVideo EMPTY>
+<!ATTLIST linkVideo
+  linkVid CDATA #REQUIRED
+>  
+<!ELEMENT referenciaUtilizador EMPTY>
+<!ATTLIST referenciaUtilizador 
+	id IDREF #REQUIRED
+>
+<!--PLAYLISTS-->
+<!ELEMENT Playlists (playlist+)>
+	<!ELEMENT playlist (descricao, linkimagem, criador, admin:subscritor, edit:subscritor, subscritor, vid*)>
+	<!ATTLIST playlist
+		ip ID #REQUIRED
+		TT CDATA #REQUIRED
+		dc CDATA #REQUIRED
+	>
+<!ELEMENT descricao (#PCDATA)>
+<!ELEMENT linkimagem EMPTY>
+	<!ATTLIST linkimagem
+		linkAp CDATA #REQUIRED>
+<!ELEMENT criador (VideosPub)>
+	<!ATTLIST criador 
+		id IDREF #REQUIRED>
+<!ELEMENT VideosPub EMPTY>
+	<!ATTLIST VideosPub
+		Titulo1 IDREF #REQUIRED
+		Titulo2 IDREF #REQUIRED>
+<!ELEMENT admin:subscritor EMPTY>
+	<!ATTLIST admin:subscritor
+		id IDREF #REQUIRED>
+<!ELEMENT edit:subscritor EMPTY>
+	<!ATTLIST edit:subscritor
+		id IDREF #REQUIRED>
+<!ELEMENT subscritor (pedidoeditor)>
+	<!ATTLIST subscritor
+		id IDREF #REQUIRED
+		ultimo_vid IDREF #REQUIRED
+		vid_restantes CDATA #REQUIRED
+		ultVisita CDATA #REQUIRED>
+	<!ELEMENT pedidoeditor EMPTY>
+		<!ATTLIST pedidoeditor
+			resposta CDATA #REQUIRED>
+<!ELEMENT vid EMPTY>
+<!ATTLIST vid
+		V IDREF #REQUIRED
+>
+<!--COMENTARIOS-->
+<!ELEMENT Comentários (Comentario+)>
+<!ELEMENT Comentario (comentário+, reacao, texto*)>
+<!ELEMENT comentário EMPTY>
+<!ATTLIST comentário
+	idcom ID #REQUIRED
+	id IDREF #REQUIRED
+	Titulo IDREF #REQUIRED
+	ComentarioPai IDREF #IMPLIED
+	datacomentario CDATA #REQUIRED
+	>
+	<!ELEMENT reacao (gosto? |nao_gosto?)+>
+		<!ELEMENT gosto (#PCDATA)>
+		<!ELEMENT nao_gosto (#PCDATA)>
+<!ELEMENT texto (#PCDATA)
+>
+<!--REGISTO-->
+<!ELEMENT Registo (AltPerf, AltVid, AltPL)>
+	<!ELEMENT AltPerf (Pénaterra, Trimente, GolD, JoJo)>
+		<!ELEMENT Pénaterra (#PCDATA)>
+			<!ATTLIST Pénaterra
+				id IDREF #REQUIRED>
+		<!ELEMENT Trimente (#PCDATA)>
+			<!ATTLIST Trimente
+				id IDREF #REQUIRED>
+		<!ELEMENT GolD (#PCDATA)>
+			<!ATTLIST GolD
+				id IDREF #REQUIRED>
+		<!ELEMENT JoJo (#PCDATA)>
+			<!ATTLIST JoJo
+				id IDREF #REQUIRED>
+	<!ELEMENT AltVid (vid1, vid2, vid3, vid4,vid5)>
+		<!ELEMENT vid1 (#PCDATA)>
+			<!ATTLIST vid1
+				Titulo IDREF #REQUIRED>
+		<!ELEMENT vid2 (#PCDATA)>
+			<!ATTLIST vid2
+				Titulo IDREF #REQUIRED>
+		<!ELEMENT vid3 (#PCDATA)>
+			<!ATTLIST vid3
+				Titulo IDREF #REQUIRED>
+		<!ELEMENT vid4 (#PCDATA)>
+			<!ATTLIST vid4
+				Titulo IDREF #REQUIRED>
+		<!ELEMENT vid5 (#PCDATA)>
+			<!ATTLIST vid5
+				Titulo CDATA #REQUIRED>
+	<!ELEMENT AltPL (pl1, pl2, pl3)>
+		<!ELEMENT pl1 (#PCDATA)>
+			<!ATTLIST pl1
+				ip IDREF #REQUIRED>
+		<!ELEMENT pl2 (#PCDATA)>
+			<!ATTLIST pl2
+				ip IDREF #REQUIRED>
+		<!ELEMENT pl3 (#PCDATA)>
+			<!ATTLIST pl3
+				ip CDATA #REQUIRED>

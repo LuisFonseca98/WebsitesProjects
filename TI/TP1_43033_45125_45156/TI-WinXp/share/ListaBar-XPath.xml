@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista_bar_cerveja>
+	
+  <bar oBar="b1" nome="O Bar Inglês"/>
+  <bar oBar="b2" nome="O Pinguim"/>
+
+	<cerveja aCerveja="c1" nome="Bud" preço="2.5"/>
+	<cerveja aCerveja="c2" nome="Antarctica" preço="3"/>
+  <bar_cerveja oBar="b1"/>
+  
+  <bar_cerveja oBar="b2" aCerveja="c2" >Boa Escolha!
+  </bar_cerveja>
+  <!-- Outro comentário -->
+
+</lista_bar_cerveja>

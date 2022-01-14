@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by lol (lol) -->
+<!DOCTYPE Tivid SYSTEM "tivid.dtd">
+<Tivid>
+	<utilizadores>
+		<utilizador id="U01" pass="mortomasvivo" username="Pénaterra">
+			<nome>Alberto Estrada</nome>
+			<email>pénacova@gmail.com</email>
+			<datadenascimento date="2001/09/16"/>
+			<numerodetelefone>912794627</numerodetelefone>
+			<morada>Avenida Pé na Cova nº13 6ºA</morada>
+		</utilizador>
+		<utilizador id="U02" pass="halitofresco" username="Trimente">
+			<nome>Jaquim Floresta</nome>
+			<email>bluepepermint@gmail.com</email>
+			<datadenascimento date="1993/01/02"/>
+			<numerodetelefone>934397852</numerodetelefone>
+			<morada>Rua do mato  nº2</morada>
+		</utilizador>
+		<utilizador id="U03" pass="onepiece" username="GolD">
+			<nome>Roger D Gol</nome>
+			<email>pirateking@gmail.com</email>
+			<datadenascimento date="1593/11/27"/>
+			<numerodetelefone>935952179</numerodetelefone>
+			<morada>Avenida Raftel nº 1</morada>
+		</utilizador>
+		<utilizador id="U04" pass="oraoraora" username="JoJo">
+			<nome>Joseph Joestar</nome>
+			<email>notostand@gmail.com</email>
+			<datadenascimento date="1868/04/04"/>
+			<numerodetelefone>945328761</numerodetelefone>
+			<morada>Rua Dio Brando nº99</morada>
+		</utilizador>
+	</utilizadores>
+	<videos>
+		<video id="U01" Titulo="Top_10_anime_battles_of_all_time">
+			<Descrição des="Best anime battles of all time, all in one video, give a thumps up and don´t forget to subscribe"/>
+			<linkImagem linkIm="http://otakukart.com/animeblog/wp-content/uploads/2017/12/Best-Anime-Fights.jpg"/>
+			<duração> 9:59</duração>
+			<QualidadeVideo>
+				<q144p bool_="no"/>
+				<q240p bool_="no"/>
+				<q360p bool_="no"/>
+				<q480p bool_="no"/>
+				<q720p bool_="yes"/>
+				<q1080p bool_="yes"/>
+			</QualidadeVideo>
+			<referenciaVideo Titulo="Top_10_Anime_Openings_2017"/>
+			<reacao_video id="U01" gosto="yes"/>	
+			<reacao_video id="U03" nao_gosto="yes"/>
+			<reacao_video id="U04" gosto="yes"/>
+			<dataInserção>2018/09/18</dataInserção>
+			<linkVideo linkVid="https://www.youtube.com/watch?v=mWItG-9cZLc"/>
+			<referenciaUtilizador id="U02"/>
+		</video>
+		<video id="U02" Titulo="OMG_I_found_RYAN_REYNOLDS_in_PORTUGAL_MUST_WATCH">
+			<Descrição des="Well i found one the best persons in the cinema history, and known as the role of Deadpool, watch the video and see for yourself!!!!"/>
+			<linkImagem linkIm="https://images.indianexpress.com/2016/05/dead759.jpg"/>
+			<duração>15:00</duração>
+			<QualidadeVideo>
+				<q144p bool_="no"/>
+				<q240p bool_="no"/>
+				<q360p bool_="no"/>
+				<q480p bool_="no"/>
+				<q720p bool_="yes"/>
+				<q1080p bool_="yes"/>
+			</QualidadeVideo>
+			<referenciaVideo Titulo="I_GLUED_MY_BROTHER_TO_THE_FLOOR"/>
+			<reacao_video id="U04" gosto="yes"/>
+			<dataInserção> 2016/08/31</dataInserção>
+			<linkVideo linkVid="https://www.youtube.com/watch?v=z2VZ_OGz0RU"/>
+			<referenciaUtilizador id="U01"/>
+		</video>
+		<video id="U02" Titulo="I_GLUED_MY_BROTHER_TO_THE_FLOOR">
+			<Descrição des="My brother got home last night totally wasted and passed out on the floor and I as an amazing brother, decided to glew him to the floor xD!!!! "/>
+			<linkImagem linkIm="https://images.indianexpress.com/2018/05/glew759.jpg"/>
+			<duração>6:00</duração>
+			<QualidadeVideo>
+				<q144p bool_="no"/>
+				<q240p bool_="no"/>
+				<q360p bool_="no"/>
+				<q480p bool_="no"/>
+				<q720p bool_="yes"/>
+				<q1080p bool_="yes"/>
+			</QualidadeVideo>
+			<referenciaVideo Titulo="OMG_I_found_RYAN_REYNOLDS_in_PORTUGAL_MUST_WATCH"/>
+			<reacao_video id="U01" nao_gosto="yes"/>	
+			<reacao_video id="U02" nao_gosto="yes"/>
+			<reacao_video id="U03" nao_gosto="yes"/>
+			<reacao_video id="U04" gosto="yes"/>
+			<dataInserção> 2018/09/21</dataInserção>
+			<linkVideo linkVid="https://www.youtube.com/watch?v=fuEjv_5BHr67"/>
+			<referenciaUtilizador id="U01"/>
+		</video>
+		<video id="U01" Titulo="Top_10_Anime_Openings_2017">
+			<Descrição des="I leave you here a list that in my opinion are the best anime openings of 2017"/>
+			<linkImagem linkIm="https://images.indianexpress.com/2017/12/anime7854.jpg"/>
+			<duração>25:00</duração>
+			<QualidadeVideo>
+				<q144p bool_="no"/>
+				<q240p bool_="no"/>
+				<q360p bool_="no"/>
+				<q480p bool_="no"/>
+				<q720p bool_="yes"/>
+				<q1080p bool_="yes"/>
+			</QualidadeVideo>
+			<referenciaVideo Titulo="Top_10_anime_battles_of_all_time"/>
+			<reacao_video id="U01" gosto="yes"/>	
+			<reacao_video id="U02" nao_gosto="yes"/>
+			<reacao_video id="U03" gosto="yes"/>
+			<dataInserção>2018/01/25</dataInserção>
+			<linkVideo linkVid="https://www.youtube.com/watch?v=zRU53f_aFY4j"/>
+			<referenciaUtilizador id="U02"/>
+		</video>
+	</videos>
+	<Playlists>
+		<playlist ip="p_1" TT="Pra_ver" dc="28/02/2018">
+			<descricao>Videos que guardei para ver mais tarde.</descricao>
+			<linkimagem linkAp="http://otakukart.com/animeblog/wp-content/uploads/2017/12/Best-Anime-Fights.jpg"/>
+			<criador id="U01">
+				<VideosPub Titulo1="Top_10_Anime_Openings_2017" Titulo2="Top_10_anime_battles_of_all_time"/>
+			</criador>
+			<admin:subscritor id="U01"/>
+			<edit:subscritor id="U04"/>
+			<subscritor id="U03" ultimo_vid = "OMG_I_found_RYAN_REYNOLDS_in_PORTUGAL_MUST_WATCH" vid_restantes = "1" ultVisita="2018/07/21">
+				<pedidoeditor resposta = "no"/>
+			</subscritor>
+			<vid V="OMG_I_found_RYAN_REYNOLDS_in_PORTUGAL_MUST_WATCH"/>
+			<vid V="Top_10_Anime_Openings_2017"/>
+		</playlist>
+		<playlist ip="p_2" TT="Playlist_frescura" dc="2018/03/08">
+			<descricao>Videos que gostei e quero relembrar.</descricao>
+			<linkimagem linkAp="https://images.indianexpress.com/2016/05/dead759.jpg"/>
+			<criador id="U02">
+				<VideosPub Titulo1="I_GLUED_MY_BROTHER_TO_THE_FLOOR" Titulo2="OMG_I_found_RYAN_REYNOLDS_in_PORTUGAL_MUST_WATCH"/>
+			</criador>
+			<admin:subscritor id="U02"/>
+			<edit:subscritor id="U03"/>
+			<subscritor id="U04" ultimo_vid = "Top_10_Anime_Openings_2017" vid_restantes = "0" ultVisita = "2018/05/31">
+				<pedidoeditor resposta = "yes"/>
+			</subscritor>
+			<vid V="I_GLUED_MY_BROTHER_TO_THE_FLOOR"/>
+			<vid V="Top_10_Anime_Openings_2017"/>
+		</playlist>
+	</Playlists>
+	<Comentários>
+		<Comentario>
+			<comentário idcom="_01" id="U02" Titulo="Top_10_Anime_Openings_2017"/>
+			<datacomentario dia="21" mes="06" ano="2018"/>
+			<reacao_comentario>
+				<gosto>yes</gosto>
+			</reacao_comentario>
+			<texto>like Vegeta would say "ITS OVER 9000", LOVED IT!!!</texto>
+		</Comentario>
+		<Comentario>
+			<comentário idcom="_02" id="U01" Titulo="I_GLUED_MY_BROTHER_TO_THE_FLOOR"/>
+			<datacomentario dia="17" mes="05" ano="2017"/>
+			<reacao_comentario>
+				<nao_gosto>yes</nao_gosto>
+			</reacao_comentario>
+			<texto>I can't believe you did that to your brother, he must be so mad!!!</texto>
+		</Comentario>
+	</Comentários>
+	<Registo>
+		<AltPerf>
+		<Pénaterra id = "U01"> Alterou a sua pagina de rosto (13:37- 2018/10/18) </Pénaterra>
+		<Trimente id = "U02"> Alterou foto de perfil (10:25- 2018/05/01) </Trimente>
+		<GolD id = "U03"> Alterou foto de capa (08:43 - 2017/12/12) </GolD>
+		<JoJo id="U04"> Alterou o username ( 16:14 - 2018/03/12) </JoJo>
+		</AltPerf>
+		<AltVid>
+		<vid1 Titulo = "Top_10_anime_battles_of_all_time"> A referencia do video foi alterada (18:12- 2016/11/05)</vid1>
+		<vid2 Titulo = "OMG_I_found_RYAN_REYNOLDS_in_PORTUGAL_MUST_WATCH"> A thumbnail do video foi alterada (12:37- 2017/01/04)</vid2>
+		<vid3 Titulo = "I_GLUED_MY_BROTHER_TO_THE_FLOOR"> O video foi definido para +16 devido ao tipo de conteudo mostrado (15:01- 2016/08/11)</vid3>
+		<vid4 Titulo = "Top_10_Anime_Openings_2017">O link da imagem foi alterado (13:23- 2015/05/12)</vid4>
+		<vid5 Titulo = "How_to_pass_TI"> O vídeo foi removido pelo utilizador (14:17- 2018/07/14)</vid5>	
+		</AltVid>
+		<AltPL>
+		<pl1 ip = "p_1">O administrador alterou a descrição da playlist (02:57- 2017/06/25)</pl1>
+		<pl2 ip = "p_2">O video "Top_10_anime_battles_of_all_time" foi removido da playlist (19:21- 2018/9/13)</pl2>
+		<pl3 ip = "p_3">A playlist foi removida (23:38- 2017/01/18)</pl3>
+		</AltPL>
+	</Registo>
+</Tivid>
