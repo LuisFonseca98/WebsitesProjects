@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/form_manager.js"></script>
+    <link rel="stylesheet" href="css/styling.css" type="text/css"/>
+    <title>Tarefas</title>
+</head>
+<body background="img/background.jpg" class="bg">
+<section id="Tarefas">
+    <form name="Tarefas" method="POST" onsubmit="validateForm2()" action="AvaliacaoGlobal.html">
+        <fieldset>
+            <legend> Tarefas</legend>
+            <h3>Por favor, realiza as seguintes tarefas e descreva-nos os resultados obtidos.</h3>
+            <article id = "t1">
+                <h3><b> Tarefa1 - Explorar o website </b></h3>
+                <p>
+                    Explore o website livremente durante alguns minutos de modo a ficar mais familiarizado com <br>
+                    as funcionalidades do website.
+                </p>
+                <p>
+                    <b>
+                        7 - Indique se encontrou algum erro ou se sentiu alguma dificuldade em perceber as <br>
+                        funcionalidades principais do website.
+                    </b>
+                </p>
+                <textarea rows = "5" id = "Tarefa1" name ="Tarefa1" value = "text"></textarea>
+            </article>
+
+            <article id = "t2">
+                <h3><b> Tarefa2 - Pesquisar Imagens </b></h3>
+                <p>
+                    Escolha a opção de pesquisa por palavra chave, selecione uma categoria à sua escolha e <br>
+                    observe os resultados. Repita a pesquisa com outras categorias.
+                </p>
+
+                <p>
+                    <b>
+                        8 - Como classifica os resultados obtidos pela pesquisa por categoria (1 significa “Maus” e 5
+                        significa “Excelentes”)? *
+                    </b>
+
+                </p>
+                    <label >Quantidade(1 até 5):</label>
+                    <input type="number" name="quantity" min="1" max="5" required>
+            </article>
+            <article id = "t3">
+                <p>
+                    <b>
+                        9 - Que dificuldades encontrou para realizar a pesquisa e visualizar os resultados?
+                    </b>
+                </p>
+                <textarea rows = "5" id = "Tarefa2" name ="Tarefa2" class = "text"></textarea>
+                <p>
+                    <b>
+                        Escolha a opção de pesquisa por cor dominante, selecione uma cor à sua escolha e observe os
+                        resultados. Repita a pesquisa com outras cores.
+                    </b>
+                </p>
+            </article>
+            <article id="t4">
+                <p>
+                    <b>
+                        10 - Como classifica os resultados obtidos pela pesquisa por cor (1 significa “Maus” e 5
+                        significa “Excelentes”)? *
+                    </b>
+                </p>
+                    <label>Quantidade(1 até 5):</label>
+                    <input type="number" name="quantity2" min="1" max="5"required>
+            </article>
+            <article id = "t5">
+                <p>
+                    <b>
+                        11 - Que dificuldades encontrou para realizar a pesquisa e visualizar os resultados?
+                    </b>
+                </p>
+                <textarea rows = "5" id = "Tarefa3" name ="Tarefa3" class = "text"></textarea>
+                <p>
+                    <b>
+                        Escolha a opção de pesquisa por imagem semelhante, selecione uma imagem à sua escolha e
+                        observe os resultados.
+                    </b>
+                </p>
+            </article>
+            <article id="t6">
+                <p>
+                    <b>
+                        12 - Como classifica os resultados obtidos pela pesquisa por imagem semelhante (1 significa
+                        “Maus” e 5 significa “Excelentes”)? *
+                    </b>
+                </p>
+                    <label >Quantidade(1 até 5):</label>
+                    <input type="number" name="quantity3" min="1" max="5"required>
+            </article>
+            <article id="t7">
+                <p>
+                    <b>
+                        13 - Como classifica a utilidade da pesquisa por Imagens Semelhantes (1 significa “Pouca” e 5
+                        significa “Muita”)? *
+                    </b>
+                </p>
+                    <label >Quantidade(1 até 5):</label>
+                    <input type="number" name="quantity4" min="1" max="5"required>
+            </article>
+            <article id = "t8">
+                <p>
+                    <b>
+                        14 - Que dificuldades encontrou para realizar a pesquisa e visualizar os resultados?
+                    </b>
+                </p>
+                <textarea rows = "5" id = "Tarefa4" name ="Tarefa4" class = "text"></textarea>
+            </article>
+            <article id = "t9">
+                <p>
+                    <b>
+                        15 - Qual o tipo de pesquisa que acha mais adequado?
+                    </b>
+                </p>
+                <textarea rows = "5" id = "Tarefa5" name ="Tarefa5" class = "text"></textarea>
+            </article>
+        </fieldset>
+        <div id="next">
+            <input id="sub" type="submit" name="submit" value="continuar" >
+        </div>
+    </form>
+</section>
+</body>
+</html>

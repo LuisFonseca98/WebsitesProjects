@@ -1,0 +1,184 @@
+<!DOCTYPE html >
+<html>
+<head lang="pt">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styling.css" type="text/css"/>
+    <script src="js/form_manager.js"></script>
+    <title>Questionário</title>
+</head>
+<body background="img/background.jpg" class="bg">
+<section id="Avaliação Global">
+    <form name="Avaliação" method="POST" onsubmit="validateForm3()" action ="DadosPessoais.html">
+        <fieldset>
+            <legend> Avaliação Global</legend>
+            <h3>Por favor, responda às seguintes questões para avaliar a sua experiência de utilização e a<br>
+                usabilidade do website.</h3>
+            <p>
+            <p><b>Experiência de utilização</b></p>
+            <b>
+                16 - Para cada par de adjetivos, selecione a opção que melhor descreve a sua experiência de
+                utilização deste website.
+            </b>
+            </p>
+
+            <label for="t2_1" > Maus</label>
+            <input id = "t2_1" type = "radio" name = "AvaliaçãoGlobal" value="1" class="button" >
+            <input id = "t2_2" type = "radio" name = "AvaliaçãoGlobal" value="2" class="button" >
+            <input id = "t2_3" type = "radio" name = "AvaliaçãoGlobal" value="3" class="button" >
+            <input id = "t2_4" type = "radio" name = "AvaliaçãoGlobal" value="4" class="button" >
+            <input id = "t2_5" type = "radio" name = "AvaliaçãoGlobal" value="5" class="button" required>
+            <label for = "t2_5">Excelente</label>
+        <p>
+            <b>
+                17 - Acho que gostaria de utilizar este website com frequência (1 significa “Discorda <br>
+                completamente” e 5 significa “Concorda completamente”). *
+            </b>
+        </p>
+        <label for="t3_1" > Discordo Completamente</label>
+        <input id = "t3_1" type = "radio" name = "AvaliaçãoGlobal2" value="1" class="button" >
+        <input id = "t3_2" type = "radio" name = "AvaliaçãoGlobal2" value="2" class="button" >
+        <input id = "t3_3" type = "radio" name = "AvaliaçãoGlobal2" value="3" class="button" >
+        <input id = "t3_4" type = "radio" name = "AvaliaçãoGlobal2" value="4" class="button" >
+        <input id = "t3_5" type = "radio" name = "AvaliaçãoGlobal2" value="5" class="button" required>
+        <label for = "t3_5">Concorda Completamente</label>
+
+        <p>
+            <b>
+                18 - Considerei o website mais complexo do que necessário. (1 significa “Discorda <br>
+                completamente” e 5 significa “Concorda completamente”). **
+            </b>
+        </p>
+        <label for="t5_1" > Discordo Completamente</label>
+        <input id = "t5_1" type = "radio" name = "AvaliaçãoGlobal3" value="1" class="button" >
+        <input id = "t5_2" type = "radio" name = "AvaliaçãoGlobal3" value="2" class="button" >
+        <input id = "t5_3" type = "radio" name = "AvaliaçãoGlobal3" value="3" class="button" >
+        <input id = "t5_4" type = "radio" name = "AvaliaçãoGlobal3" value="4" class="button" >
+        <input id = "t5_5" type = "radio" name = "AvaliaçãoGlobal3" value="5" class="button" required>
+        <label for = "t5_5">Concorda Completamente</label>
+
+        <p>
+            <b>
+                19 - Achei o website fácil de utilizar (1 significa “Discorda completamente” e 5 significa<br>
+                “Concorda completamente”). *
+            </b>
+        </p>
+        <label for="t6_1" > Discordo Completamente</label>
+        <input id = "t6_1" type = "radio" name = "AvaliaçãoGlobal4" value="1" class="button" >
+        <input id = "t6_2" type = "radio" name = "AvaliaçãoGlobal4" value="2" class="button" >
+        <input id = "t6_3" type = "radio" name = "AvaliaçãoGlobal4" value="3" class="button" >
+        <input id = "t6_4" type = "radio" name = "AvaliaçãoGlobal4" value="4" class="button" >
+        <input id = "t6_5" type = "radio" name = "AvaliaçãoGlobal4" value="5" class="button" required >
+        <label for = "t6_5">Concorda Completamente</label>
+
+        <p>
+            <b>
+                20 - Acho que necessitaria de ajuda de um técnico para conseguir utilizar este website (1 <br>
+                significa “Discorda completamente” e 5 significa “Concorda completamente”). *
+            </b>
+        </p>
+
+        <label for="t7_1" > Discordo Completamente</label>
+        <input id = "t7_1" type = "radio" name = "AvaliaçãoGlobal5" value="1" class="button" >
+        <input id = "t7_2" type = "radio" name = "AvaliaçãoGlobal5" value="2" class="button" >
+        <input id = "t7_3" type = "radio" name = "AvaliaçãoGlobal5" value="3" class="button" >
+        <input id = "t7_4" type = "radio" name = "AvaliaçãoGlobal5" value="4" class="button" >
+        <input id = "t7_5" type = "radio" name = "AvaliaçãoGlobal5" value="5" class="button" required >
+        <label for = "t7_5">Concorda Completamente</label>
+
+        <p>
+            <b>
+                21 - Considerei que as várias funcionalidades deste website estavam bem integradas (1 <br>
+                significa “Discorda completamente” e 5 significa “Concorda completamente”). *
+
+            </b>
+        </p>
+
+        <label for="t8_1" > Discordo Completamente</label>
+        <input id = "t8_1" type = "radio" name = "AvaliaçãoGlobal6" value="1" class="button" >
+        <input id = "t8_2" type = "radio" name = "AvaliaçãoGlobal6" value="2" class="button" >
+        <input id = "t8_3" type = "radio" name = "AvaliaçãoGlobal6" value="3" class="button" >
+        <input id = "t8_4" type = "radio" name = "AvaliaçãoGlobal6" value="4" class="button" >
+        <input id = "t8_5" type = "radio" name = "AvaliaçãoGlobal6" value="5" class="button" required >
+        <label for = "t8_5">Concorda Completamente</label>
+
+        <p>
+            <b>
+                22 - Achei que este website tinha muitas inconsistências (1 significa “Discorda
+                completamente” e 5 significa “Concorda completamente”). *
+            </b>
+        </p>
+
+        <label for="t9_1" > Discordo Completamente</label>
+        <input id = "t9_1" type = "radio" name = "AvaliaçãoGlobal7" value="1" class="button" >
+        <input id = "t9_2" type = "radio" name = "AvaliaçãoGlobal7" value="2" class="button" >
+        <input id = "t9_3" type = "radio" name = "AvaliaçãoGlobal7" value="3" class="button" >
+        <input id = "t9_4" type = "radio" name = "AvaliaçãoGlobal7" value="4" class="button" >
+        <input id = "t9_5" type = "radio" name = "AvaliaçãoGlobal7" value="5" class="button" required>
+        <label for = "t9_5">Concorda Completamente</label>
+
+        <p>
+            <b>
+                23 - Suponho que a maioria das pessoas aprenderia a utilizar rapidamente este website (1
+                significa “Discorda completamente” e 5 significa “Concorda completamente”). *
+
+            </b>
+        </p>
+        <label for="t10_1" > Discordo Completamente</label>
+        <input id = "t10_1" type = "radio" name = "AvaliaçãoGlobal8" value="1" class="button" >
+        <input id = "t10_2" type = "radio" name = "AvaliaçãoGlobal8" value="2" class="button" >
+        <input id = "t10_3" type = "radio" name = "AvaliaçãoGlobal8" value="3" class="button" >
+        <input id = "t10_4" type = "radio" name = "AvaliaçãoGlobal8" value="4" class="button" >
+        <input id = "t10_5" type = "radio" name = "AvaliaçãoGlobal8" value="5" class="button" required>
+        <label for = "t10_5">Concorda Completamente</label>
+
+        <p>
+            <b>
+                24 - Considerei o website muito complicado de utilizar (1 significa “Discorda
+                completamente” e 5 significa “Concorda completamente”). *
+            </b>
+        </p>
+        <label for="t11_1" > Discordo Completamente</label>
+        <input id = "t11_1" type = "radio" name = "AvaliaçãoGlobal9" value="1" class="button" >
+        <input id = "t11_2" type = "radio" name = "AvaliaçãoGlobal9" value="2" class="button" >
+        <input id = "t11_3" type = "radio" name = "AvaliaçãoGlobal9" value="3" class="button" >
+        <input id = "t11_4" type = "radio" name = "AvaliaçãoGlobal9" value="4" class="button" >
+        <input id = "t11_5" type = "radio" name = "AvaliaçãoGlobal9" value="5" class="button" required>
+        <label for = "t11_5">Concorda Completamente</label>
+
+        <p>
+            <b>
+                25 - Senti-me muito confiante a utilizar este website (1 significa “Discorda completamente” e
+                5 significa “Concorda completamente”). *
+
+            </b>
+        </p>
+
+        <label for="t12_1" > Discordo Completamente</label>
+        <input id = "t12_1" type = "radio" name = "AvaliaçãoGlobal_10" value="1" class="button" >
+        <input id = "t12_2" type = "radio" name = "AvaliaçãoGlobal_10" value="2" class="button" >
+        <input id = "t12_3" type = "radio" name = "AvaliaçãoGlobal_10" value="3" class="button" >
+        <input id = "t12_4" type = "radio" name = "AvaliaçãoGlobal_10" value="4" class="button" >
+        <input id = "t12_5" type = "radio" name = "AvaliaçãoGlobal_10" value="5" class="button" required>
+        <label for = "t12_5">Concorda Completamente</label>
+
+        <p>
+            <b>
+                26 - Tive que aprender muito antes de conseguir lidar com este website (1 significa “Discorda
+                completamente” e 5 significa “Concorda completamente”). *
+            </b>
+        </p>
+        <label for="t13_1" > Discordo Completamente</label>
+        <input id = "t13_1" type = "radio" name = "AvaliaçãoGlobal_11" value="1" class="button" >
+        <input id = "t13_2" type = "radio" name = "AvaliaçãoGlobal_11" value="2" class="button" >
+        <input id = "t13_3" type = "radio" name = "AvaliaçãoGlobal_11" value="3" class="button" >
+        <input id = "t13_4" type = "radio" name = "AvaliaçãoGlobal_11" value="4" class="button" >
+        <input id = "t13_5" type = "radio" name = "AvaliaçãoGlobal_11" value="5" class="button" required>
+        <label for = "t13_5">Concorda Completamente</label>
+        </fieldset>
+        <div id="next">
+            <input id="sub" type="submit" name="submit" value="Submeter" >
+        </div>
+    </form>
+</section>
+</body>
+</html>

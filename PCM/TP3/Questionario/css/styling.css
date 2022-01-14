@@ -1,0 +1,29 @@
+
+article#dp3 li{
+    list-style-type: none;
+}
+article#dp3 ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+article#dp4 li{
+    list-style-type: none;
+}
+article#dp4 ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+legend{
+    color: mediumblue;
+    font-size: 25px;
+    font-family: "Times New Roman","sans-serif";
+}
+
+.bg{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

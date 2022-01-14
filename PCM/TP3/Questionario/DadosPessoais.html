@@ -1,0 +1,156 @@
+<!DOCTYPE html >
+<html>
+<head lang="pt">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styling.css" type="text/css"/>
+    <script src="js/form_manager.js"></script>
+
+    <title>Questionário</title>
+</head>
+<body background="img/background.jpg" class="bg">
+<header>
+    <h1>Questionário</h1>
+    <h2>Google Images</h2>
+</header>
+<p><b>O Google Images tem como objetivo apresentar imagens relevantes para o utilizador.<br>
+    Assim, são disponibilizados três métodos de pesquisa:</b>
+</p>
+
+<ul>
+    <li><b>Pesquisa por categoria;</b></li>
+    <li><b>Pesquisa por cor;</b></li>
+    <li><b>Pesquisa por imagem semelhante.</b></li>
+</ul>
+<p>
+    <b>
+        O utilizador pode procurar as imagens mais relevantes de uma determinada categoria, as<br>
+        imagens com mais percentagem de uma cor, e as imagens mais parecidas com uma imagem <br>
+        introduzida pelo utilizador
+    </b>
+</p>
+
+<p>
+    <b>
+        Este questionário é formado por 3 seções, e tem como objectivo avaliar a usabilidade do website.
+        Pedimos-lhe que execute as <br>
+        tarefas abaixo descritas e, preenchendo este questionário, nos informe acerca das dificuldades<br>
+        que encontrou ao interagir com o sistema e nos dê a sua opinião acerca da interface e das<br>
+        funcionalidades disponíveis.
+    </b>
+</p>
+
+<p>
+    <b>
+        Obrigada pela sua participação.
+    </b>
+</p>
+
+<section id="dados_pessoais">
+    <form name="fdpessoais" method="POST" onsubmit="validateForm()" action="Tarefas.html">
+        <fieldset>
+            <legend> Dados Pessoais</legend>
+            <article id = "dp1">
+                <h3> 1- Qual é a sua idade? </h3>
+                <input id = "name1" type="radio" name="idade" value="<18">
+                <label for = "name1"><18</label>
+
+                <input id = "name2" type="radio" name="idade" value="18-25">
+                <label for = "name2" >18-25</label>
+
+                <input id = "name3" type="radio" name="idade" value="26-33" >
+                <label for = "name3"> 26-33 </label>
+
+                <input id = "name4" type = "radio" name = "idade" value = "34-40">
+                <label for = "name4"> 34-40 </label>
+
+                <input id = "name5" type = "radio" name ="idade" value = "> 40" required>
+                <label for = "name5"> > 40 </label>
+            </article>
+            <article id = "dp2">
+                <h3>2- Género:</h3>
+                <input id = "masc" type="radio" name="sexo" value="masculino">
+                <label for = "masc"> Masculino </label>
+
+                <input id = "fem" type="radio" name="sexo" value="feminino">
+                <label for = "fem"> Feminino </label>
+            </article>
+            <article id = "dp3">
+                <ul>
+                    <h3> 3- Com que frequência usa a internet?</h3>
+                    <li>
+                        <input id = "Diario" type = "radio" name = "internet" value = "Diariamente">
+                        <label for = "Diario"> Diariamente </label>
+                    </li>
+                    <li>
+                        <input id = "semana" type = "radio" name = "internet" value = "Algumas vezes por semana">
+                        <label for = "semana"> Algumas vezes por semana </label>
+                    </li>
+                    <li>
+                        <input id = "mes" type = "radio" name = "internet" value = "Algumas vezes por mes">
+                        <label for = "mes"> Algumas vezes por mes </label>
+                    </li>
+                    <li>
+                        <input id = "raro" type = "radio" name = "internet" value = "Raramente" >
+                        <label for = "raro"> Raramente </label>
+                    </li>
+                    <li>
+                        <input id = "nunca" type = "radio" name = "internet" value = "Nunca" >
+                        <label for = "nunca"> Nunca </label>
+                    </li>
+                </ul>
+            </article>
+            <article id = "dp4">
+                <ul>
+                    <h3>4 –Indique, por ordem de preferência, os Web browsers que mais utiliza. Deve indicar 3.<br>
+                        Utilize valores de 1 a 3, sendo 1 o mais preferido e 3 o menos. ** </h3>
+                    <label for="primeiro">Opção 1</label>
+                    <select id="primeiro" name="browser1" onchange="checkBrowser(this)" required>
+                        <option value = "Selecione uma opção">Selecione uma opção</option>
+                        <option value ="Chrome">Chrome</option>
+                        <option value ="Firefox">Firefox</option>
+                        <option value ="Internet Explorer">Internet Explorer</option>
+                        <option value ="Opera">Opera</option>
+                        <option value ="Safari">Safari</option>
+                    </select>
+
+                    <label for="segundo">Opção 2</label>
+                    <select id="segundo" name="browser2" onchange="checkBrowser(this)"  required>
+                        <option value = "Selecione uma opção">Selecione uma opção</option>
+                        <option value ="Chrome">Chrome</option>
+                        <option>Firefox</option>
+                        <option>Internet Explorer</option>
+                        <option>Opera</option>
+                        <option>Safari</option>
+                    </select>
+
+                    <label for="terceiro">Opção 3</label>
+                    <select id="terceiro" name="browser3" onchange="checkBrowser(this)"  required>
+                        <option value = "Selecione uma opção">Selecione uma opção</option>
+                        <option value ="Chrome">Chrome</option>
+                        <option>Firefox</option>
+                        <option>Internet Explorer</option>
+                        <option>Opera</option>
+                        <option>Safari</option>
+                    </select>
+                </ul>
+            </article>
+            <article id = "dp5" onsubmit="checkNoAnswer()">
+                <h3>5 - Conhece outros websites de pesquisa de imagem?</h3>
+
+                <input id = "w1" type="radio" name="web" value="Não"  onclick="checkNoAnswer()">
+                <label for = "w1">Não</label>
+
+                <input id = "w2" type="radio" name="web" value="Sim" onclick="checkNoAnswer()"required>
+                <label for = "w2">Sim.</label>
+
+                <label for="w3">6 - Quais?</label>
+                <input id="w3" type="text" name="text6" disabled>
+            </article>
+        </fieldset>
+        <div id="next">
+            <input id="sub" type="submit" name="submit" value="continuar">
+        </div>
+    </form>
+</section>
+</body>
+</html>
